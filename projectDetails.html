@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">My Portfolio</a></li>	
+							<li><a href="aboutMe.html">About Me</a></li>
+							<li class="active"><a href="projectDetails.html">Project Details</a></li>
+						</ul>
+						<ul class="icons">
+							<!--
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							-->
+							<li><a href="https://github.com/LeonhardSa" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+
+				<style>
+					* {
+					  box-sizing: border-box;
+					}
+					
+					.row {
+					  display: flex;
+					}
+					
+					/* Create three equal columns that sits next to each other */
+					.column {
+					  flex: 33.33%;
+					  padding: 5px;
+					}
+				</style>
+
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Project<br />
+									Details</h1>
+								</header>
+								<h2 id="travelers_details">Travelers of the Unorthodox</h2>
+								<p>As the last project during university and a solo project, this project is an attempt to work with portals and non-euclidean geometry. The final product ended as a Demo for a puzzle game with portals, custom gravity and rooms that can distort during gameplay.<br />
+								To represent portals I set up a camera at the other side of the portal and used a camera render texture to show the player what is beyond the portal itself. After that portals got the ability to scale objects that pass through and change the gravity of the player and unique blocks.<br />
+								For the distorting room was a script set up which scans and area for all objects. After that the room can be set up to have a distortion strength and direction for every of its 8 corners and depending on the object position it will have a different influence. But it is not the object itself being moved, but the creat a realistic distortion effect ever vertex in the mesh is being updated in realtime.
+								With this implementation it was possible to ditort rooms over time, but a feature taking in the player position to the room as scaling factor was added as well.</p>
+								<div class="row">
+									<div class="column">
+										<a class="image fit"><img src="images/travelersoftheunorthodox.gif" alt="" /></a>
+									</div>
+									<div class="column">
+										<a class="image fit"><img src="images/TotU1.PNG" alt="" /></a>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a href="https://github.com/LeonhardSa/TravelersOfTheUnorthodox/releases" class="button large">To Github</a></li>
+								</ul>
+							</section>
+							<section class="post">
+								<h2 id="colorfull_details">Colorfull</h2>
+								<p>The first Unreal Project, with 2 programmer and a handful of artists, was a 3 week long Game Jam. The game is a single-player, battle royale, with similar events to Fall Guys. The goal is to color the most hexagons in a limited time.<br />
+								My job was the character controls and animation setup, as well as the round and event management, while my partner did the controller support, lobby mechanics and ending screen, round timer and event symbols.<br />
+								The game features two character actions besides moving. Firstly players can grab each other to sabotage, while secondly the more offensive action, can launch the other players away, by doiing a dash jump. For events it is limited to 3, which include platform fall, icy ground and platform shuffle.</p>
+								<div class="row">
+									<div class="column">
+										<a class="image fit"><img src="images/colorfull.gif" alt="" /></a>
+									</div>
+									<div class="column">
+										<a class="image fit"><img src="images/colorfullGameplay1.png" alt="" /></a>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a href="https://pfusch.itch.io/colorfull" class="button large">Get The Game</a></li>
+								</ul>
+							</section>
+							<section class="post">
+								<h2 id="melissa_details">Melissa</h2>
+								<p>Melissa is a small rogue-like slightly inspired by the known Age of Empires priest convertion mechanic and engage options. With the project beginning at the beginning of the pandemic the work moral of most was low and content got cut. With this my tasks in the project ended up being more than for others. <br />
+								My job where the robots, their controls, behaviour and them being converted by the player, the map generator as well as room progression checks and block out room designs.<br />
+								The game offers two types of robots one for melee combat and the other for ranged. The player has the option to sent them toward a place in attack mode that targets the first enemy in sight or defense mode, which makes them go passed enemies without engaging on your side.
+							    Enemies will still attack you and you have the option to either attack them yourself or use your convertion ability to take over them, which works easier on low health opponents.<br />
+							    You encounter enemies in the rooms of the random generated map that you have to clear before progressing. The generation works by going a random path until hitting an end. After this it goes back to the last place where there were multiple path options and takes a different one, until every place is accessible. After that there are a few extra connections added to make it less linear.</p>
+								<div class="row">
+									<div class="column">
+										<a class="image fit"><img src="images/melissa.gif" alt="" /></a>
+									</div>
+									<div class="column">
+										<a class="image fit"><img src="images/melissaLabyrinth.png" alt="" /></a>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a href="https://github.com/LeonhardSa/Melissa/releases" class="button large">To Github</a></li>
+								</ul>
+							</section>
+							<section class="post">
+								<h2>Personal Projects</h2>
+								<h3 id="personal_project_details_dungeongen">Dungeon Generator</h3>
+								<p>Personally I am a huge fan of balencing enemy stats and generating surroundings with some extent of variety and randomness. So most of the years I end up with a project generating labyrinths, mazes or a small combat game with stat ranges.<br />
+							    My newest project from 2023 is a Pokemon Mystery Dungeon inspired maze with rooms. For it's generation I add n starting crossroads, which generate paths away from it. Those turn and continue until they hit a path of a different starting point. After all the paths reach an end, it will try to find space for n rooms in the map, where a path is existent.</p>
+								
+								<div class="row">
+									<div class="column">
+										<a class="image fit"><img src="images/maze.gif" alt="" /></a>
+									</div>
+									<div class="column">
+										<a class="image fit"><img src="images/maze1.png" alt="" /></a>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a href="https://github.com/LeonhardSa/DungeonGen2023/releases" class="button large">To Github</a></li>
+								</ul>
+								<h3 id="personal_project_details_pixelshader">Pixel Shader</h3>
+								<p>Something I started working on during my studies was a shader to turn everything into pixel art. I started this project, because most artists on campus I talked to enjoyed all different styles of art from 2D to 3D and I also realised.. most of them don't do pixel art. With this it was decided, even I can write a shader or two.<br />
+								It is a post processing shader using the render of the main camera. Currently the user can set a custom pixel size. Turning on and off a grid for the pixels, changing the color calculation between complex and simple and setting the color palatte. The color palettes include 8bit, 15bit, 16bit, 24bit and custom, while custom is currently Unity Editor only.<br />
+								Future plans are setting up an outline detection and making custom color palettes work in the game build. With this every artist can make a game featuring pixel art.</p>
+								<div class="row">
+									<div class="column">
+										<a class="image fit"><img src="images/shader.gif" alt="" /></a>
+									</div>
+									<div class="column">
+										<a class="image fit"><img src="images/shadersplit.png" alt="" /></a>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a class="button large">Coming Soon</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				
+				<footer id="footer">
+					<style>
+						h3 {text-align: center;}
+						p {text-align: center;}
+						div {text-align: center;}
+					</style>
+					<section class="split contact">
+						<section class="alt">
+							<h3>Area</h3>
+							<p>Austria<br/>
+							Carinthia</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p>leonhard.samonig@gmx.net</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<!--
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								-->
+								<li><a href="https://github.com/LeonhardSa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
