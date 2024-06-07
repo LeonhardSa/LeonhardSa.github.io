@@ -49,10 +49,10 @@
 					}
 					
 					/* Create three equal columns that sits next to each other */
-					.column {
-					  flex: 33.33%;
-					  padding: 5px;
-					}
+                    .column {
+                        flex: 33.33%;
+                        padding: 5px;
+                    }
 				</style>
 
 					<div id="main">
@@ -118,23 +118,88 @@
 							<section class="post">
 								<h2>Personal Projects</h2>
 								<h3 id="personal_project_details_dungeongen">Dungeon Generator</h3>
-								<p>Personally, I am a huge fan of balancing enemy stats and generating surroundings with some extent of variety and randomness. So, most of the years, I end up with a project generating labyrinths, mazes, or a small combat game with stat ranges.<br />
-								My newest project from 2023 is a Pokemon Mystery Dungeon inspired maze with rooms. For its generation, I add n starting crossroads, which generate paths away from it. Those turn and continue until they hit a path of a different starting point. After all the paths reach an end, it will try to find space for n rooms in the map, where a path is existent.</p>
+								<p>
+									Personally, I am a huge fan of balancing enemy stats and generating surroundings with some extent of variety and randomness. So, most of the years, I end up with a project generating labyrinths, mazes, or a small combat game with stat ranges.<br />
+									This years was once again inspired by Pokemon Mystery Dungeon. But I put more work into it than 1 quick afternoon... instead it was a weekend. Biggest inspiration came from <a href=https://pokemon-dungeoneer.vercel.app> "Pokemon Dungeoneer" </a>, I suggest to check it out. I took the main idea of splitting it into areas and using those as the core of the dungeon generation.</p>
 								<div class="row">
 									<div class="column">
-										<a class="image fit"><img src="images/maze.gif" alt="" /></a>
+										<a class="image fit"><img src="images/mazeNotSoGif.png" alt="" /></a>
 									</div>
 									<div class="column">
-										<a class="image fit"><img src="images/maze1.png" alt="" /></a>
+										<section>
+											<div class="slideshow-container">
+												<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+												<a class="next" onclick="plusSlides(1)">&#10095;</a>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (5).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (3).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (4).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (1).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (6).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (7).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (8).png" alt="" /></a>
+												</div>
+												<div class="mySlides fade">
+													<a class="image fit"><img src="images/maze1 (10).png" alt="" /></a>
+												</div>
+											</div>
+											<div style="text-align:center">
+												<span class="dot" onclick="currentSlide(1)"></span>
+											</div>
+										</section>
 									</div>
+
+									<script>
+										let slideIndex = 1;
+										showSlides(slideIndex);
+
+										function plusSlides(n) {
+											showSlides(slideIndex += n);
+										}
+
+										function currentSlide(n) {
+											showSlides(slideIndex = n);
+										}
+
+										function showSlides(n) {
+											let i;
+											let slides = document.getElementsByClassName("mySlides");
+											let dots = document.getElementsByClassName("dot");
+											if (n > slides.length) { slideIndex = 1 }
+											if (n < 1) { slideIndex = slides.length }
+											for (i = 0; i < slides.length; i++) {
+												slides[i].style.display = "none";
+											}
+											for (i = 0; i < dots.length; i++) {
+												dots[i].className = dots[i].className.replace(" active", "");
+											}
+											slides[slideIndex - 1].style.display = "block";
+											dots[slideIndex - 1].className += " active";
+										}
+									</script>
+
 								</div>
 								<ul class="actions special">
-									<li><a href="https://github.com/LeonhardSa/DungeonGen2023/releases" class="button large">To Github</a></li>
+									<li><a href="https://github.com/LeonhardSa/DungeonGenJavaEdition2024/releases" class="button large">To Github</a></li>
 								</ul>
 								<h3 id="personal_project_details_pixelshader">Pixel Shader</h3>
-								<p>Something I started working on during my studies was a shader to turn everything into pixel art. I started this project because most artists on campus I talked to enjoyed all different styles of art from 2D to 3D, and I also realized that most of them don't do pixel art. With this, it was decided that even I can write a shader or two.<br />
-								It is a post-processing shader using the render of the main camera. Currently, the user can set a custom pixel size, turn on and off a grid for the pixels, change the color calculation between complex and simple, and set the color palette. The color palettes include 8bit, 15bit, 16bit, 24bit, and custom, while custom is currently Unity Editor only.<br />
-								Future plans are setting up an outline detection and making custom color palettes work in the game build. With this, every artist can make a game featuring pixel art.</p>
+								<p>
+									Something I started working on during my studies was a shader to turn everything into pixel art. I started this project because most artists on campus I talked to enjoyed all different styles of art from 2D to 3D, and I also realized that most of them don't do pixel art. With this, it was decided that even I can write a shader or two.<br />
+									It is a post-processing shader using the render of the main camera. Currently, the user can set a custom pixel size, turn on and off a grid for the pixels, change the color calculation between complex and simple, and set the color palette. The color palettes include 8bit, 15bit, 16bit, 24bit, and custom, while custom is currently Unity Editor only.<br />
+									Future plans are setting up an outline detection and making custom color palettes work in the game build. With this, every artist can make a game featuring pixel art.
+								</p>
 								<div class="row">
 									<div class="column">
 										<a class="image fit"><img src="images/shader.gif" alt="" /></a>
