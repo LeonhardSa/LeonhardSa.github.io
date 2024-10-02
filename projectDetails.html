@@ -53,6 +53,45 @@
                         flex: 33.33%;
                         padding: 5px;
                     }
+
+                    .slideshow-container {
+                        max-width: 1000px;
+                        position: relative;
+                        margin: auto;
+                    }
+
+                    .prev, .next {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 0;
+                        width: auto;
+                        padding: 16px;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 18px;
+                        transition: 0.6s ease;
+                        border-radius: 0 3px 3px 0;
+                        user-select: none;
+                    }
+
+
+                    .prev {
+                        background-color: rgba(0,0,0,0.5);
+                        left: 0;
+                        border-radius: 0 5px 5px 0;
+                        
+                    }
+
+                    .next {
+                        background-color: rgba(0,0,0,0.5);
+                        right: 0;
+                        border-radius: 5px 0 0 5px;
+                    }
+
+                    .prev:hover, .next:hover {
+                        background-color: rgba(0,0,0,0.9);
+                    }
+
 				</style>
 
 					<div id="main">
@@ -70,10 +109,10 @@
 								Rather than moving the objects themselves, I updated every vertex in the mesh in real-time to create a realistic distortion effect. This implementation allowed rooms to distort over time or based on the player's position.</p>
 								<div class="row">
 									<div class="column">
-										<a class="image fit"><img src="images/travelersoftheunorthodox.gif" alt="" /></a>
+										<img class="image fit" src="images/travelersoftheunorthodox.gif" alt="" />
 									</div>
 									<div class="column">
-										<a class="image fit"><img src="images/TotU1.PNG" alt="" /></a>
+										<img class="image fit" src="images/TotU1.PNG" alt="" />
 									</div>
 								</div>
 								<ul class="actions special">
@@ -87,10 +126,10 @@
 								In addition to basic movement, players can grab and sabotage each other or use a dash jump to launch opponents away. The game features three events: platform fall, icy ground, and platform shuffle.</p>
 								<div class="row">
 									<div class="column">
-										<a class="image fit"><img src="images/colorfull.gif" alt="" /></a>
+										<img class="image fit" src="images/colorfull.gif" alt="" />
 									</div>
 									<div class="column">
-										<a class="image fit"><img src="images/colorfullGameplay1.png" alt="" /></a>
+										<img class="image fit" src="images/colorfullGameplay1.png" alt="" />
 									</div>
 								</div>
 								<ul class="actions special">
@@ -105,10 +144,10 @@
 							    The map generation algorithm works by randomly selecting a path until it hits an end, then backtracking to the last place where there were multiple path options and taking a different one, until every place is accessible. Finally, a few extra connections are added to make it less linear.</p>
 								<div class="row">
 									<div class="column">
-										<a class="image fit"><img src="images/melissa.gif" alt="" /></a>
+										<img class="image fit" src="images/melissa.gif" alt="" />
 									</div>
 									<div class="column">
-										<a class="image fit"><img src="images/melissaLabyrinth.png" alt="" /></a>
+										<img class="image fit" src="images/melissaLabyrinth.png" alt="" />
 									</div>
 								</div>
 								<ul class="actions special">
@@ -123,40 +162,25 @@
 									This years was once again inspired by Pokemon Mystery Dungeon. But I put more work into it than 1 quick afternoon... instead it was a weekend. Biggest inspiration came from <a href=https://pokemon-dungeoneer.vercel.app> "Pokemon Dungeoneer" </a>, I suggest to check it out. I took the main idea of splitting it into areas and using those as the core of the dungeon generation.</p>
 								<div class="row">
 									<div class="column">
-										<a class="image fit"><img src="images/mazeNotSoGif.png" alt="" /></a>
+										<img class="image fit" src="images/mazeNotSoGif.png" alt="" />
 									</div>
 									<div class="column">
 										<section>
 											<div class="slideshow-container">
+												<div class="mySlides fade">
+													<img class="image fit" src="images/maze1_4.png" alt="" />
+												</div>
+												<div class="mySlides fade">
+													<img class="image fit" src="images/maze1_3.png" alt="" />
+												</div>
+												<div class="mySlides fade">
+													<img class="image fit" src="images/maze1_2.png" alt="" />
+												</div>
+												<div class="mySlides fade">
+													<img class="image fit" src="images/maze1_1.png" alt="" />
+												</div>
 												<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 												<a class="next" onclick="plusSlides(1)">&#10095;</a>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (5).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (3).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (4).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (1).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (6).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (7).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (8).png" alt="" /></a>
-												</div>
-												<div class="mySlides fade">
-													<a class="image fit"><img src="images/maze1 (10).png" alt="" /></a>
-												</div>
-											</div>
-											<div style="text-align:center">
-												<span class="dot" onclick="currentSlide(1)"></span>
 											</div>
 										</section>
 									</div>
@@ -202,10 +226,10 @@
 								</p>
 								<div class="row">
 									<div class="column">
-										<a class="image fit"><img src="images/shader.gif" alt="" /></a>
+										<img class="image fit" src="images/shader.gif" alt="" />
 									</div>
 									<div class="column">
-										<a class="image fit"><img src="images/shadersplit.png" alt="" /></a>
+										<img class="image fit" src="images/shadersplit.png" alt="" />
 									</div>
 								</div>
 								<ul class="actions special">

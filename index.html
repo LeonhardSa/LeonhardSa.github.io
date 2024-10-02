@@ -79,7 +79,7 @@
                     cursor: pointer;
                     position: absolute;
                     top: 60%;
-                    width: 4%;
+                    width: auto;
                     padding: 16px;
                     margin-top: -22px;
                     color: black;
@@ -93,19 +93,19 @@
 
                 .prev {
                     background-color: rgba(0,0,0,0.2);
-                    left: -4%;
+                    left: -40px;
                     border-radius: 5px 0 0 5px;
                 }
 
                 .next {
                     background-color: rgba(0,0,0,0.2);
-                    right: -4%;
-                    border-radius: 5px 0 0 5px;
+                    right: -40px;
+                    border-radius: 0 5px 5px 0;
                 }
 
-					.prev:hover, .next:hover {
-						background-color: rgba(0,0,0,0.8);
-					}
+				.prev:hover, .next:hover {
+					background-color: rgba(0,0,0,0.8);
+				}
 
                 .text {
                     color: white;
@@ -240,25 +240,22 @@
 							</h2>
 						</header>
 						<div class="mySlides fade">
-							<a href="https://srslylawl.itch.io/why-did-the-car-cross-the-frog" class="image fit"><img src="images/frog.png" alt="" /></a>
 							<div class="text">Why did the car cross the frog?</div>
+							<br>
+							<a href="https://srslylawl.itch.io/why-did-the-car-cross-the-frog" class="image fit"><img src="images/frog.png" alt="" /></a>
 						</div>
-	<!--
-	<div class="mySlides fade">
-		<a href="projectDetails.html#personal_project_details_pixelshader" class="image fit"><img src="images/shadersplit.png" alt="" /></a>
-		<div class="text">Caption Text</div>
-	</div>
-	<div class="mySlides fade">
-		<a href="projectDetails.html#personal_project_details_pixelshader" class="image fit"><img src="images/shadersplit.png" alt="" /></a>
-		<div class="text">Caption Text</div>
-	</div>
-	-->
+						<div class="mySlides fade">
+							<div class="text">Storehouse Storm!</div>
+							<br>
+							<a href="https://srslylawl.itch.io/storehouse-storm" class="image fit"><img src="images/storehouse.png" alt="" /></a>
+						</div>
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					</div>
 
 					<div style="text-align:center">
 						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
 					</div>
 				</section>
 			</div>
@@ -320,7 +317,7 @@
 					</section>
 					<section>
 						<h3>Email</h3>
-						<p>leonhard.samonig@gmx.net</p>
+						<p><a href="mailto:leonhard.samonig@gmx.net">leonhard.samonig@gmx.net</a></p>
 					</section>
 					<section>
 						<h3>Social</h3>
@@ -328,7 +325,10 @@
 	<!--
 	<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 	-->
-							<li><a href="https://github.com/LeonhardSa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li>
+								<a href="https://github.com/LeonhardSa" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+								<a href="https://leonhardsa.itch.io" class="icon brands alt fa-itch-io"><span class="label">ItchIo</span></a>
+							</li>
 						</ul>
 					</section>
 				</section>
